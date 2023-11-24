@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.customdesign.TargetOverlay
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="600dp" />
+
+    <Button
+        android:id="@+id/cameraButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="circle"
+        android:layout_below="@id/overlay"/>
+    <Button
+        android:id="@+id/cameraButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rect"
+        android:layout_below="@id/cameraButton1"/>
+    <Button
+        android:id="@+id/cameraButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="square"
+        android:layout_below="@id/cameraButton2"/>
+
+</LinearLayout>
